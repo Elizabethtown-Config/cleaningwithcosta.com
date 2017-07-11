@@ -13,7 +13,7 @@ node(NODE_LABEL){
     git branch: 'master', credentialsId: git_creds, url: deploy_url
 
     stage "Deploy"
-    withEnv(["NODE_PORT=3337"]){
+    withEnv(["NODE_PORT=3010"]){
         sh "docker-compose rm -f"
         sh "docker-compose pull"
         sh "docker-compose up -d"
