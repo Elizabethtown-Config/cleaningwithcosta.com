@@ -1,7 +1,7 @@
 lpcommercialcleaning.com:
   image: eignhpants/cleaningwithcosta.com:stable
   ports:
-    - 3010:3337
+    - 3010:3010
   expose:
-    - 3337
+    - 3010
   restart: always
